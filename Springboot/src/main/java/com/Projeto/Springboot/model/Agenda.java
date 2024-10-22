@@ -20,6 +20,7 @@ public class Agenda implements Serializable {
     @ManyToOne
     private Servico servico;
     private Cliente cliente;
+    private Usuario usuario;
 
     public Integer getId() {
         return id;
@@ -59,5 +60,13 @@ public class Agenda implements Serializable {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }
